@@ -7,7 +7,7 @@ apk update
 
 # install pg_dump
 apk add postgresql-client
-
+apk add bash
 # install gpg
 apk add gnupg
 
