@@ -11,5 +11,5 @@ if [ -z "$SCHEDULE" ]; then
     echo "WARNING: $SCHEDULE is null. Going to sleep."
     tail -f /dev/null # do nothing forever
 else
-  exec go-cron "$SCHEDULE" /bin/sh backup.sh
+  exec go-cron "$SCHEDULE" /bin/bash backup.sh
 fi
